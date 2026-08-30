@@ -1,7 +1,7 @@
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="38%" valign="middle" style="padding-right: 18px;">
-      <img src="imgs/fciencias.webp" alt="UNAM y Facultad de Ciencias" width="360" />
+      <img src="imgs/fciencias.png" alt="UNAM y Facultad de Ciencias" width="360" />
     </td>
     <td valign="middle">
       <p style="margin: 0; font-size: 28px; font-weight: 700;">
@@ -63,4 +63,4 @@ Se utilizará principalmente Python, Git, Google Colab y VSCode para la implemen
 
 ---
 
-© 2026 Kin. Todos los derechos reservados.
+© 2026 Jessica Santizo. Todos los derechos reservados.
