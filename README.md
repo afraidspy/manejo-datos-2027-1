@@ -14,7 +14,7 @@
         Manejo de Datos
       </p>
       <p style="margin: 6px 0 0 0; font-size: 16px;">
-        Profesor: Kin
+        Profesor: Jessica Santizo Galicia
       </p>
     </td>
   </tr>
@@ -24,7 +24,7 @@
 
 # Introducción
 
-Este repositorio contiene materiales de apoyo para la asignatura **Manejo de Datos**, incluyendo notebooks, prácticas, datasets de ejemplo y guías de instalación.
+Este repositorio contiene materiales de apoyo para la asignatura **Manejo de Datos**, incluyendo notebooks, prácticas y datasets de ejemplo.
 
 ## Objetivo
 
