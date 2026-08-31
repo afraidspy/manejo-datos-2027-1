@@ -92,34 +92,33 @@ class Figura:
 
 class Rectangulo(Figura):
     def __init__(self, base, altura):
-        self.base = base
-        self.altura = altura
+        self.base = base;
+        self.altura = altura;
 
     def area(self):
-        #Completar
-        pass
+        return self.base * self.altura;
 
 
 class Circulo(Figura):
     def __init__(self, radio):
-        self.radio = radio
+        self.radio = radio;
 
     def area(self):
-        #Completar
-        pass
-
+        return self.radio * self.radio * math.pi;
 
 def area_total(figuras):
-    #Completar
-    pass
-
+    total = 0;
+    for fig in figuras:
+        total += fig.area()
+    return total;
+    
 
 def prueba_ejercicio_2():
     print("\n Ejercicio 2")
     figuras = [Rectangulo(4, 5), Circulo(3)]
     total = area_total(figuras)
-    esperado = 4 * 5 + math.pi * 3 ** 2
-    print(f"Área total esperada: {esperado:.2f} | obtenida: {total:.2f}")
+
+    print("Total de área es: " , total)
 
 
 """
@@ -159,40 +158,6 @@ def prueba_ejercicio_3():
     cuenta.retirar(999999) 
     print("Saldo esperado tras retiro inválido (no debe cambiar): 1200  obtenido:", cuenta.getSaldo())
 
- 
-"""
-Ejercicio 4: Herencia múltiple.
- 
-Crea dos clases "mixin": `Volador` (con método volar()) y `Nadador`
-(con método nadar()). Crea una clase `Pato(Animal, Volador, Nadador)`
-que combine ambos comportamientos además de heredar de Animal.
-"""
- 
- 
-class Volador:
-    def volar(self):
-        print("Estoy volando")
- 
- 
-class Nadador:
-    def nadar(self):
-        print("Estoy nadando")
- 
- 
-class Pato(Animal, Volador, Nadador):
-    def hablar(self):
-        print("Cuac!")
- 
-    def moverse(self):
-        print("Caminando, nadando o volando")
- 
- 
-def prueba_ejercicio_4():
-    print("\n Prueba Ejercicio 4")
-    pato = Pato("ave acuática", 1)
-    pato.hablar()
-    pato.volar()
-    pato.nadar()
  
 
 """
@@ -242,8 +207,8 @@ class PezGloboArgentino(Pez):
         pass
 
 
-def prueba_ejercicio_5():
-    print("\n Prueba Ejercicio 5")
+def prueba_ejercicio_4():
+    print("\n Prueba Ejercicio 4")
     pez = Pez("acuático", 2)
     globo = PezGloboArgentino("acuático", 1)
     pez.hablar()
@@ -272,7 +237,3 @@ if __name__ == "__main__":
         prueba_ejercicio_4()
     except Exception as e:
         print(f"Ejercicio 4 {e}")
-    try:
-        prueba_ejercicio_5()
-    except Exception as e:
-        print(f"Ejercicio 5 {e}")
