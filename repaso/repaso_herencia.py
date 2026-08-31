@@ -129,24 +129,23 @@ Crea una clase `CuentaBancaria` con un atributo "privado" __saldo
   - retirar(monto): decrementa el saldo, solo si hay saldo suficiente
     y monto > 0; si no, imprime un mensaje de error y no modifica el saldo
 """
-
-
 class CuentaBancaria:
     def __init__(self, titular, saldo_inicial=0):
         self.titular = titular
         self.__saldo = saldo_inicial
 
+    # Alta cohesion
     def getSaldo(self):
-        #Completar
-        pass
+        return self.__saldo
 
     def depositar(self, monto):
-        #Completar
-        pass
+        if monto > 0:
+            self.__saldo += monto
+        
 
     def retirar(self, monto):
-        #Completar
-        pass
+        if monto <= self.__saldo:
+            self.__saldo = self.__saldo - monto
 
 
 def prueba_ejercicio_3():
